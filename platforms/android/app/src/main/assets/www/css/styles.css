@@ -1,0 +1,542 @@
+body {
+    background: #f7f5fa !important;
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#spinner {
+    color: #337ab7;
+    font-size: 100px;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+
+.container {
+    margin: 10px 0;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* navigation */
+
+.navbar.header {
+    min-height: 44px !important;
+    background: #337ab7;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.navbar.header ul.navbar-right li a {
+    cursor: pointer;
+}
+
+#points {
+    cursor: default;
+    padding-right: 10px
+}
+
+#calculated-points {
+    min-width: 25px;
+    float: right;
+    margin: 0px;
+}
+
+a.dropdown-toggle {
+    background: none !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background: none !important;
+    text-decoration: none;
+}
+
+#showRightPicker>div {
+    width: 150px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-right li a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.nav>li {
+    border-right: 2px solid #F7F7F7;
+}
+
+.nav>li:nth-child(4) {
+    border: none;
+}
+
+.popover.left {
+    width: 170px;
+}
+
+.nav .popover.bottom {
+    position: absolute;
+    left: 0;
+}
+
+/* end navigation */
+
+/* search task by name */
+
+.search-div {
+    float: left;
+    margin-left: 13px;
+    display: none;
+    width: 65%;
+}
+
+#user {
+    height: 44px;
+    padding: 4px;
+}
+
+.search-input {
+    background: none !important;
+    border-radius: 4px !important;
+    color: #FFF !important;
+}
+
+.search-input::placeholder {
+    color: #FFF !important;
+    opacity: 0.8;
+}
+
+.search-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #FFF;
+}
+
+.search-input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #FFF;
+}
+
+.icon-user {
+    margin: 10px 0px 10px 9px;
+    float: left;
+}
+
+.username {
+    height: 100%;
+    margin-left: 35px;
+    margin-top: 7px;
+}
+
+.search,
+.search:hover {
+    float: right;
+    color: #FFF;
+    cursor: pointer;
+    margin-right: 10px
+}
+
+.collapse-button {
+    float: right;
+    vertical-align: middle;
+    line-height: 33px;
+    padding: 0px !important;
+    margin: 0px 15px 0px 0px !important;
+    background: transparent;
+}
+
+/* end search task by name */
+
+/* categories */
+
+#allCategories {
+    padding: 0px;
+}
+
+.el {
+    padding: 0 10px !important;
+    border-radius: 4px;
+}
+
+.category,
+.popover {
+    width: 100%;
+}
+
+.category .cat {
+    padding-left: 10px;
+}
+
+.icon-plus {
+    padding: 13px
+}
+
+.popover-task {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input-group-addon {
+    cursor: pointer;
+}
+
+.input-group-addon:hover {
+    background: #e3e3e3;
+}
+
+.completedCat .input-group-addon:hover,
+.incompletedCat .input-group-addon:hover {
+    background: #eee;
+    cursor: default;
+}
+
+.input-group-addon i,
+#parent-dropdown i {
+    color: #337ab7;
+}
+
+.popover-task-addon {
+    cursor: default !important;
+}
+
+.popover-task-addon:hover {
+    background: #eee;
+}
+
+.ui-datepicker {
+    z-index: 9999 !important;
+}
+
+.input-group-addon {
+    width: 40px !important;
+    padding: 0px !important;
+}
+
+.select-priority {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* end categories */
+
+/* tasks visualization */
+
+.category-heading {
+    margin-bottom: 15px;
+}
+
+.category-heading .label {
+    margin: 0 auto;
+    font-size: 14px;
+    display: none;
+}
+
+.task {
+    max-height: 159px;
+}
+
+.main {
+    padding: 0px !important;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    padding: 0px !important;
+}
+
+.thumbnail:hover .done-icon,
+.thumbnail:hover .delete-icon {
+    display: block;
+}
+
+.caption {
+    margin-top: 15px;
+}
+
+.caption hr {
+    margin: 5px 0;
+}
+
+.caption h5 {
+    margin: 0px;
+}
+
+.delete-icon,
+.done-icon,
+.delete-icon-incompleted,
+.delete-icon-completed {
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #ddd;
+    width: 30px !important;
+    height: 24px;
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.delete-icon,
+.delete-icon-incompleted,
+.delete-icon-completed {
+    color: #F00;
+    right: 15px;
+    top: 0px;
+    border-radius: 0px 4px 0px 0px;
+}
+
+.delete-icon:hover {
+    background: #F7F7F7;
+    color: #ce0101
+}
+
+.done-icon {
+    color: #0eb511;
+    right: 15px;
+    top: 23px;
+    border-radius: 0px 0px 0px 4px;
+}
+
+.done-icon::before,
+.delete-icon::before,
+.delete-icon-incompleted::before,
+.delete-icon-completed::before {
+    position: relative;
+    top: 3px;
+}
+
+.done-icon:hover {
+    background: #F7F7F7;
+    color: #0b8b0d;
+}
+
+.show-more {
+    padding: 0px 5px !important;
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.task-priority {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.taskName {
+    display: inherit;
+    word-wrap: normal;
+}
+
+/* end tasks visualization */
+
+/* login and  greetings containers*/
+
+.login-header {
+    color: rgb(89, 81, 81);
+}
+
+.logo {
+    width: 35px;
+    position: relative;
+    top: 4px;
+}
+
+.full-logo {
+    max-width: 60%;
+}
+
+.login-logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 115px;
+}
+
+.form-signin {
+    max-width: 380px;
+    padding: 5px 50px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.form-signin-heading,
+.checkbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-signin-heading h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.checkbox {
+    font-weight: normal;
+}
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 0px;
+}
+
+input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.fa-lock.login {
+    color: #337ab7;
+}
+
+.fa-user.login {
+    color: #337ab7;
+}
+
+#loginButton {
+    color: #337ab7;
+}
+
+#loginModal .modal-dialog {
+    margin: 20px auto;
+}
+
+.loginmodal-container-header {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.modal-body,
+.modal-header {
+    padding: 0px !important;
+}
+
+.modal-dialog {
+    max-width: 450px !important;
+    margin: 10px auto !important
+}
+
+.greetings {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#greeetings-content>.modal-content-heading,
+#greeetings-content>.modal-content-body {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px auto;
+}
+
+#greetings-modal .modal-smile {
+    color: #337ab7;
+}
+
+.btn-primary.confirm {
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 15px auto;
+}
+
+.form-control {
+    margin-bottom: 5px
+}
+
+.btn-header {
+    float: right;
+}
+
+ul.active>li>a {
+    color: #FFF
+}
+
+.modal-sm h4 {
+    color: #000000;
+    text-align: center;
+}
+
+.modal-sm p {
+    color: #000000;
+}
+
+.modal-header.description {
+    margin: 10px 10px;
+}
+
+.modal-body.description {
+    margin: 15px 15px;
+}
+
+.ordered-list {
+    color: rgb(10, 10, 10);
+    list-style-type: decimal;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.ordered-list span:after {
+    white-space: pre-line;
+}
+
+.unordered-list {
+    color: rgb(10, 10, 10);
+    list-style-type: circle;
+    padding-left: 15px;
+    margin: 0;
+}
+
+/* end login and  greetings containers*/
+
+@media (max-width: 767px) {
+    .nav>li {
+        border-right: none;
+        border-bottom: 2px solid #FFF;
+    }
+    .category-heading .label {
+        display: block;
+    }
+}
