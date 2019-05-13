@@ -50,8 +50,6 @@ const database = (function () {
                 (a,b) => {console.log(b)}
             );
         });
-
-        // _categories[catId].push(task);
     }
 
     function getAllTasksInCategory(id, fn) {
@@ -112,7 +110,6 @@ const database = (function () {
         Used by getSortedByDateAndTime() and getDone()
     */
     var _compareFuncByDateAndTimeAsc = function (a, b) {
-
         var aDate = a.dueDate.slice(0, 2);
         var aMonth = a.dueDate.slice(3, 5);
         var aYear = a.dueDate.slice(6);

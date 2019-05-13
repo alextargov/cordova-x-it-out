@@ -17,8 +17,7 @@ const pointsLogic = (function () {
                 const low = 2;
                 const medium = 5;
                 const high = 10;
-                console.log('done', done);
-                console.log('incompleted', incompleted);
+
                 for (let i = 0; i < done.length; i += 1) {
                     const priority = done[i].priority;
                     if (priority === 'low') {
@@ -96,8 +95,6 @@ const pointsLogic = (function () {
     }
 
     repeatEvery(showTime, ONE_MINUTE);
-
-    document.addEventListener("resume", showTime, false);
 
     return {
         calculatePoints,
